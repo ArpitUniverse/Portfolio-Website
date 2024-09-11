@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Images/17-01.png);
+    background-image: url(Images/29.png);
     background-size: cover;
     background-position: center;
 }
@@ -34,13 +34,13 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 90px;
+    margin: 10px 20px;
 }
 
 nav ul li a{
     color:#fff;
     text-decoration: none;
-    font-size: 90px;
+    font-size: 18px;
     position: relative;
 }
 
@@ -60,24 +60,24 @@ nav ul li a:hover::after{
 
 }
 .header-text{
-    margin-top: 10%;
-    font-size: 150px;
+    margin-top: 20%;
+    font-size: 50px;
 }
 .header-text h1{
-    font-size: 400px;
-    margin-top: -10px;
+    font-size: 60px;
+    margin-top: 20px;
     color: #fff;
 }
 .header-text h1 span{
-    font-size: 400px;
+    font-size: 60px;
     margin-top: 20px;
     color:#ffd60a;
 }
 
 
 .header-text h2{
-    font-size: 150px;
-    margin-top: 100px;
+    font-size: 40px;
+    margin-top: 20px;
 }
 
 .header-text h2 span{
@@ -88,8 +88,8 @@ nav ul li a:hover::after{
 
 
 .header-text h3{
-    font-size: 150px;
-    margin-top: 100px;
+    font-size: 40px;
+    margin-top: 20px;
 }
 .header-text h3 span{
     color:#ffd60a;
@@ -97,59 +97,60 @@ nav ul li a:hover::after{
 
 
 /*------------------about-------------------------*/
-#about{
-   padding: 80px 0;
-   color: #ababab
-
+#about {
+    padding: 50px 0;
+    color: #ababab;
 }
-.row{
+
+.row {
     display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;    
-
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.about-col-1{
+
+.about-col-1 {
     flex-basis: 35%;
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
-    display: block;
-    margin-top: 400px;
+    border-radius: 15px;
 }
 
-.about-col-2{
-    flex-basis: 60%;
+.about-col-2 {
+    flex-basis: 60%; /* Adjust size to fit with the tabs */
 }
 
-.sub-title{
-    font-size: 200px;
+.sub-title {
+    font-size: 60px;
     font-weight: 600;
-    color:#ffd60a;
+    color: #ffd60a;
 }
 
-.about-col-2 p{
-    margin-top: 100px;
-    font-size: 100px;
-    justify-content: space-between;
+.about-col-2 p {
+    margin-top: 20px;
+    font-size: 18px;
     color: #fff;
+    line-height: 1.6;
 }
 
-.tab-titles{
-    display : flex;
-    margin: 20px 0 40px;
-
+/* Adjust the tab titles to align properly */
+.tab-titles {
+    display: flex;
+    margin-top: 30px;
+    justify-content: flex-start;
+    padding-left: 0;
 }
-.tab-links{
-    margin: 50px;
-    font-size: 500px;
-    font-weight: 600;
+
+.tab-links {
+    margin: 0 20px; /* Adjusted margin for spacing */
+    font-size: 30px;
+    font-weight: 500;
     cursor: pointer;
     position: relative;
-
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -160,35 +161,30 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
-    
-}
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-.tab-contents ul li span {
-    color: #ffd60a;
-    
 }
 
 .tab-contents ul li {
-    font-size: 80px; /* Default font size for the text after the span */
+    list-style: none;
+    margin: 10px 0; /* Adjust for better alignment */
 }
 
 .tab-contents ul li span {
-    font-size: 100px;
-    font-weight: 400; /* Font size for the text inside the span */
+    color: #ffd60a;
+    font-size: 25px;
+    font-weight: 400;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
+
+
 
 /*---------------------services--------------------*/
 #services {
@@ -196,7 +192,7 @@ nav ul li a:hover::after{
 }
 
 .sub-title h1 {
-    font-size: 200px;
+    font-size: 60px;
     font-weight: 600;
 }
 
@@ -218,26 +214,26 @@ nav ul li a:hover::after{
 }
 
 .services-list div i {
-    font-size: 150px; /* Set icon size to 100px */
+    font-size: 40px; /* Set icon size to 100px */
     margin-bottom: 20px; /* Adjust margin if needed */
 }
 
 .services-list div h2 {
-    font-size: 150px;
+    font-size: 40px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
 .services-list div h3 {
-    font-size: 100px;
+    font-size: 20px;
     font-weight: 400;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .services-list div p {
-    font-size: 50px;
+    font-size: 18px;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -300,24 +296,24 @@ nav ul li a:hover::after{
 }
 
 .layer h3 {
-    font-size: 150px;
+    font-size: 40px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .layer i {
-    font-size: 150px; /* Increased icon size */
+    font-size: 40px; /* Increased icon size */
     margin-bottom: 20px; /* Adjusted margin below the icon */
 }
 .layer p{
-    font-size: 80px;
+    font-size: 20px;
 }
 
 .layer a {
     margin-top: 40px;
     color: #ffd60a;
     text-decoration: none;
-    font-size: 150px; /* Adjust font size for better fit */
+    font-size: 40px; /* Adjust font size for better fit */
     background: #fff;
     width: 100px; /* Adjust size of the circle */
     height: 100px; /* Adjust size of the circle */
@@ -330,7 +326,7 @@ nav ul li a:hover::after{
 }
 
 .layer a i {
-    font-size: 80px; /* Adjust icon size */
+    font-size: 40px; /* Adjust icon size */
 }
 
 
@@ -357,7 +353,7 @@ nav ul li a:hover::after{
     margin: 100px auto;  /* Increased margin for better spacing */
     padding: 40px 100px;  /* Adjusted padding for more space around the text */
     width: fit-content;  /* Keeps the width based on content */
-    font-size: 80px;  /* Increased font size */
+    font-size: 40px;  /* Increased font size */
     font-weight: bold;  /* Bolder text */
     border: 4px solid #ffd60a;  /* Thicker border to match the larger font size */
     border-radius: 12px;  /* Slightly more rounded corners */
@@ -382,39 +378,66 @@ nav ul li a:hover::after{
 }
 .contact-left p{
     margin-top: 30px;
-    font-size: 100px;
+    font-size: 30px;
 }
 .contact-left p i{
     color: #ffd60a;
     margin-right: 15px;
-    font-size: 100px;
+    font-size: 25px;
 }
-.social-icons{
-    margin-top: 30px;
-    
+
+.linkedin-link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Vertically center the icon and text */
+    margin-bottom: 20px; /* Add space between LinkedIn link and CV button */
 }
-.social-icons a{
+
+.linkedin-link a {
+    text-decoration: none; /* Remove underline from the text */
+    color: #f4f4f1; /* Text color */
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 15px; /* Space between icon and text */
+}
+
+.linkedin-link i {
+    font-size: 25px; /* Icon size */
+    color: #ffd60a;
+    margin-right: 15px; /* Icon color */
+}
+
+/* Download CV button */
+.btn.btn2 {
+    display: inline-block;
+    background: #ffd60a;
+    font-size: 40px; /* Change the font size to 40px */
+    padding: 14px 60px; /* Adjust padding as needed */
+    cursor: pointer;
     text-decoration: none;
-    font-size: 100px;
+    color: #000;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
 }
-.social-icons a:hover{
-    color:#ffd60a;
-    translate: translateY(-5px);
-}
-.btn.btn2{
-    display: inline-block;
-    background: #ffd60a;
-    font-size: 100px;
-}
-.contact-right form{
-    width: 100%;
 
+.social-icons a:hover {
+    color: #ffd60a;
+    transform: translateY(-5px);
 }
-form input, form textarea{
+
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -422,25 +445,29 @@ form input, form textarea{
     padding: 15px;
     margin: 15px 0;
     color: #fff;
-    font-size: 100px;
+    font-size: 18px;
     border-radius: 10px;
 }
-form .btn2{
+
+form .btn2 {
     padding: 14px 60px;
-    font-size: 100px;
+    font-size: 40px; /* Adjust to 40px as requested */
     margin-top: 20px;
     cursor: pointer;
 }
-.copyright{
+
+.copyright {
     width: 100%;
     text-align: center;
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    font-size: 100px;
+    font-size: 18px;
+    color: #fff;
 }
+
 /*--------------responsive-----------*/
-@media only screen and (max-width: 400px) { /* Corrected the typo and added closing bracket */
+@media only screen and (max-width: 600px) { /* Corrected the typo and added closing bracket */
     body {
         padding: 0;
         margin: 0;
